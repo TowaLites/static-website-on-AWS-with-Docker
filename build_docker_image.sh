@@ -15,7 +15,7 @@ docker info
  vi Dockerfile 
 
 # build the docker image
-docker build -t techmax .
+docker build -t techmain .
 
 # login to your docker hub account
 docker login --username tsofiyat
@@ -27,7 +27,7 @@ docker tag techmax tsofiyat/techmax
 docker push tsofiyat/techmax
 
 # start the container to test the image 
-docker run -d --name techmax-container -p 80:80 static-app:techmax
+docker run -td --name techmaincont -p 80:80 linux:techmaain
 
 # run this command to verify
 docker run -d --name techmax-container -p 80:80 static-app:techmax
